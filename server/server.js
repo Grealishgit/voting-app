@@ -21,7 +21,7 @@ app.use(cors({
 
 app.use(upload());
 
-app.use("/api", Routes);
+app.use("/", Routes);
 
 app.use(notFound);
 app.use(errorHandler);
