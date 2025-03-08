@@ -28,7 +28,7 @@ app.use(errorHandler);
 
 connect(process.env.MONGO_URI)
     .then(() => {
-        console.log("Connected to the database successfully");
+        console.log("Connected to MongoDB");
         app.listen(process.env.PORT, () =>
             console.log(`Server started on port ${process.env.PORT}`)
         );
